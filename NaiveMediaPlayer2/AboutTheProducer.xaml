@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="NaiveMediaPlayer2.AboutTheProducer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NaiveMediaPlayer2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical">
+            <Image x:Name="sefies" Source="/Assets/396abd88dc8a582f.jpg" Height="80" Width="80" Margin="0,200,0,0"/>
+            <RichTextBlock FontSize="15" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Paragraph>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(My Sefies)
+                </Paragraph>
+                <Paragraph/>
+                <Paragraph>
+                    Name : ZyuHoiMing
+                </Paragraph>
+                <Paragraph>
+                    E-Mail : zyuhoiming@163.com
+                </Paragraph>
+                <Paragraph>
+                    Blog : blog.csdn.net/zyuhoiming
+                </Paragraph>
+                <Paragraph>
+                    GitHub : github.com/ZyuHoiMing
+                </Paragraph>
+                <Paragraph/>
+                <Paragraph>
+                    PS : The sefies is just for fun.LOL.
+                </Paragraph>
+                <Paragraph>
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Have a nice trip!
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -8,6 +8,32 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <NavigationView x:Name="MyViewTry" Header="Welcome to the NaiveMediaPlayer2.0" SelectionChanged="MyViewTry_SelectionChanged"
+                          Loaded="MyViewTry_Loaded" IsSettingsVisible="False">
+            <!-- Loaded:The First Page ; SelectionChanged:the method to change the pages -->
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="AboutProuducer" Name="AboutProuducer" Content="Something About the Prouducer" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE77B;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="Player" Name="Player" Content="Play the Local File" >
+                    <!--https://docs.microsoft.com/zh-cn/windows/uwp/design/style/segoe-ui-symbol-font-->
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE768;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Tag="FileGet" Name="FileGet" Content="Play the Online File" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE773;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Frame Name="context_frame">
 
+            </Frame>
+
+        </NavigationView> 
     </Grid>
 </Page>
